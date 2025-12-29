@@ -6,6 +6,12 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
 
 
+st.set_page_config(
+    layout="wide",
+    page_title="Movie recommender",
+    page_icon="🎬"
+)
+
 # ========================================= LOADING DATA =========================================
 
 @st.cache_data
